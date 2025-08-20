@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Acatrax">
         <activity
+            android:name=".Login_Page"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
