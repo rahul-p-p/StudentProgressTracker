@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Screen"
+    android:background="@color/ic_launcher_background">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="396dp"
+        android:layout_height="277dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/applogo"></com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="286dp"
+        android:layout_height="113dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Track. Analyze. Excel"
+        android:textAlignment="center"
+        android:textColor="#E1F8FF"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="sans-serif"
+        android:text="AcaTrax"
+        android:textColor="#D4FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
