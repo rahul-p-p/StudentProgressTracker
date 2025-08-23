@@ -1,5 +1,6 @@
 package com.example.acatrax
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -37,6 +38,12 @@ class Splash_Screen : AppCompatActivity() {
 
 // Usage
         animateTyping(findViewById(R.id.tagline), "Track. Analyze. Excel.")
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this@Splash_Screen, Login_Page::class.java)
+            startActivity(intent)
+            finish() // closes splash so user can’t go back
+        }, 6000)
 
     }
 }
