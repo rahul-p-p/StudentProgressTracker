@@ -51,6 +51,7 @@
                 android:padding="5dp">
 
                 <com.google.android.material.textfield.TextInputLayout
+
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -60,13 +61,15 @@
                     app:helperTextTextColor="@color/design_default_color_error">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailEt"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:inputType="text"
-                        android:maxLength="20" />
+                        android:maxLength="40" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -77,13 +80,15 @@
                     app:helperTextTextColor="@color/design_default_color_error">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passEt"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:inputType="textPassword"
-                        android:maxLength="20" />
+                         />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -94,15 +99,17 @@
                     app:helperTextTextColor="@color/design_default_color_error">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cpassEt"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:inputType="textPassword"
-                        android:maxLength="20" />
+                         />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <Button
+            android:id="@+id/button"
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -112,25 +119,14 @@
             android:paddingHorizontal="30dp"
             android:text="Signup"
             android:textSize="20dp" />
-        <LinearLayout
+        <TextView
+            android:id="@+id/gotologin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:text="Already have an account? Login"
+            android:textSize="18dp"
             android:layout_marginTop="10dp"
-            android:layout_gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Already have an account?"
-                android:textSize="18dp"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#00FFFF00"
-                android:text="Login"
-                android:textColor="#00f"
-                android:textSize="18dp" />
-        </LinearLayout>
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 
