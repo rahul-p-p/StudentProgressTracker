@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Semester Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSemesterName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Semester Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSemesterName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:textSize="16sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- RecyclerView for subjects -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSubjects"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/tilSemesterName"
+        app:layout_constraintBottom_toTopOf="@id/btnAddSubject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Add Subject Button -->
+    <Button
+        android:id="@+id/btnAddSubject"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Add Subject"
+        app:layout_constraintBottom_toTopOf="@id/btnSaveSemester"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Save Semester Button -->
+    <Button
+        android:id="@+id/btnSaveSemester"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Save Semester"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

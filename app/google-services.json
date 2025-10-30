@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "557182891415",
+    "project_id": "practice-1c3ce",
+    "storage_bucket": "practice-1c3ce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557182891415:android:b5c731b04c8e8f30f280d2",
+        "android_client_info": {
+          "package_name": "com.example.markssemestermanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBBaKby-XppuzIWBgkejQVrCwOvqW3D0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="teal_700">#00796B</color>
+    <color name="primaryBlue">#1976D2</color>
+    <color name="secondaryGreen">#43A047</color>
+    <color name="accentNavy">#1E3A5F</color>
+    <color name="backgroundGray">#F5F5F5</color>
+    <color name="surfaceWhite">#FFFFFF</color>
+    <color name="errorRed">#E53935</color>
+    <color name="warningAmber">#FFC107</color>
+    <color name="infoCyan">#00ACC1</color>
+
+
+    <color name="white">#FFFFFFFF</color>
+</resources>
