@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AchievementActivity">
+
+    <!-- RecyclerView for listing achievements -->
+
+    <!-- Floating Action Button -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAchievements"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        app:layout_anchor="@+id/recyclerAchievements"
+        app:layout_anchorGravity="center"
+        tools:listitem="@layout/item_achievement" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddAchievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="Add Achievement"
+        android:src="@drawable/img"
+        app:layout_anchor="@id/recyclerAchievements"
+        app:layout_anchorGravity="bottom|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
